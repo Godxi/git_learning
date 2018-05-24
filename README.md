@@ -33,4 +33,62 @@ c.移除文件：$ git rm
 d.移动文件(重命名)：$ git mv
 
 6.查看提交历史：
+查看所有日志：$ git log
+a. git log 的常用选项：
+
+-p		按补丁格式显示每个更新之间的差异。
+--stat		显示每次更新的文件修改统计信息。
+--shortstat	只显示--stat中最后的行数修改添加移除统计。
+--name-only	尽在提交信息后显示已修改的文件清单。
+--name-status	显示新增 修改 删除的文件清单。	  
+--abbrev-commit	仅显示SHA-1的前几个字符，而非所有的40个字符。
+--relative-date	使用较短的相对时间显示（如：2 weeks ago）。
+--graph		显示ASCII图形表示的分支合并历史。
+--pretty	使用其他格式显示历史提交信息。
+
+b. 限制git log 输出的选项：
+
+-(n)		仅显示最近的n条提交
+--since,--after	仅显示指定时间之后的提交
+--since,--before仅显示指定时间之前的提交
+--author	仅显示指定作者的提交
+--committer	仅显示指定提交者的提交
+--grep		仅显示含指定关键字的提交
+-S		仅显示添加或移除了某个关键字的提交
+
+c. 查看提交历史 各个分支的指向以及项目的分支分叉情况
+$ git log --oneline --decorate --graph --all
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
